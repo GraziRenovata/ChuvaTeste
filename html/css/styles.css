@@ -273,9 +273,9 @@ h2{position: absolute;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 19px;
+    font-size: 20px;
     line-height: 25px;
-    letter-spacing: 0,05em;
+    letter-spacing: 0.05em;
     text-align: left;
     color: #ED7839;
 }
@@ -389,8 +389,76 @@ color: #FFFFFF;
     letter-spacing: 0.05em;
 
     color: #ED7839;
-
 }
+
+/** painel de detalhes **/
+.painel {position: absolute;
+    width: 242px;
+    height: 439px;
+    left: 1079px;
+    top: 161px;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.rtdetalhes {position: absolute;
+    width: 242px;
+    height: 45px;
+    left: 0px;
+    top: 0px;
+    background: #FDF1EB;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 3px 3px 0px 0px;
+}
+.detalhes {position: absolute;
+    width: 212px;
+    height: 25px;
+    left: 15px;
+    top: 11px;
+    margin-top: 0px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #4E4E4E;
+}
+/** texto dos detalhes**/
+.apres {position: absolute;
+    width: 212px;
+    height: 364px;
+    left: 15px;
+    top: 50px;
+    
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: #5C5C5C;}
+.tipo { line-height: 17px;}
+.autores { line-height: 23px;}
+.universidades { line-height: 17px;}
+.rtscroll {position: absolute;
+    width: 3px;
+    height: 367px;
+    left: 233px;
+    top: 55px;
+    
+    background: #E7E7E7;
+    border-radius: 5px;}
+.rtscroll2 {position: absolute;
+    width: 3px;
+    height: 200px;
+    left: 233px;
+    top: 55px;
+    
+    background: #BFBFBF;
+    border-radius: 5px;}
 
     /**Anais do simposio**/
 .ph1{height: 16px;
