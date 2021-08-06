@@ -1,12 +1,13 @@
-.wrap {position: relative;
+.wrap {height: 1701px;
     width: 1366px;
-    height: 1701px;
-    
+    left: -684px;
+    top: -978px;
+    border-radius: 0px;
     }
 
 .sidebar{
     height: 1633px;
-    width: 16.12%;
+    width: 220px;
     left: 0px;
     top: 68px;
     border-radius: 0px;
@@ -18,6 +19,86 @@
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
+
+.sidebar p {
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #725C5C;
+}
+ /**opções do sidebar**/
+.rt1 {top: 258px;
+    left: 0px;
+    position: absolute;
+    height: 33px;
+    width: 220px;
+    border-radius:0px;
+    border-bottom: 3px inset currentColor;
+}
+.rt2 {top: 293px;
+    left: 0px;
+    position: absolute;
+    height: 33px;
+    width: 220px;
+    border-radius:0px;
+    border-bottom: 3px inset currentColor;
+}
+.rt3 {top: 328px;
+    left: 0px;
+    position: absolute;
+    height: 33px;
+    width: 220px;
+    border-radius:0px;
+    border-bottom: 3px inset currentColor;
+}
+.rt4{top: 363px;
+    left: 0px;
+    position: absolute;
+    height: 33px;
+    width: 220px;
+    border-radius:0px;
+    border-bottom: 3px inset currentColor;
+}
+.rt5 {top: 398px;
+    left: 0px;
+    position: absolute;
+    height: 33px;
+    width: 220px;
+    border-radius:0px;
+    border-bottom: 3px inset currentColor;
+    background: #FDF1EB;
+}
+.traco {height: 33px;
+    width: 5px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
+}
+.rt6 {top: 433px;
+    left: 0px;
+    position: absolute;
+    height: 33px;
+    width: 220px;
+    border-radius:0px;
+    border-bottom: 3px inset currentColor;
+}
+h4 {position: absolute;
+     top: 7px;
+    left: 24px;
+    margin-top: 0px;
+    height: 19px;
+    width: 100px;
+    font-family: Quicksand, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13.90px;
+    line-height: 19px;
+    color: #725C5C;
+}
+
+
 /**imagem do sidebar**/
 .sbimg {
     height: 258px;
@@ -29,7 +110,7 @@
 
 /** retangulo com o nome SLACA**/
 .retangulo { height: 68px;
-    width: 16.12%;
+    width: 220px;
     left: 0px;
     top: 0px;
     border-radius: 0px;
@@ -58,13 +139,265 @@
     text-align: center;
     color: #FFFFFF;}
 
+.header {position:absolute;
+    height: 68px;
+    width: 1146px;
+    left: 220px;
+    top: 0px;
+    border-radius: 0px;
+    background: #FDF1EB
+}
+
+/** botão do header (language)**/
+button{
+    position: absolute;
+    width: 97px;
+    height: 34px;
+    left: 789px;
+    top: 17px;
+
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background: url(../chuvaimg/language.png) no-repeat 8px 5px;
+}
+
+/**letras do button **/
+.lb{position: absolute;
+    width: 42px;
+    height: 18px;
+    left: 31px;
+    top: 8px;
+    
+    font-family: Quicksand, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+    color: #333333;
+}
+
+/**icon do button**/
+.ib {
+    position: absolute;
+    width: 6px;
+    height: 4px;
+    left: 78px;
+    top: 7px;
+}
+
+/**texto de bem vindo**/
+.bv {position: absolute;
+    width: 72px;
+    height: 18px;
+    left: 999px;
+    top: 17px;
+    margin-top: 0px;
+    
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    color: #333333;
+}
+
+.email{
+    position: absolute;
+    width: 163px;
+    height: 15px;
+    left: 908px;
+    top: 36px;
+    margin-top: 0px;
+
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    color: #333333;
+}
+
+/**icone de perfil**/
+.iconep{height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 94%;
+    right: 2.53%;
+    top: 27.94%;
+    bottom: 27.94%;
+    border-radius: 70%;
+    background: url(../chuvaimg/imagep.png) no-repeat center;
+
+}
+/** 2 **/
+.qntd{
+    position: absolute;
+    width: 6px;
+    height: 12px;
+    left: 1101px;
+    top: 17px;
+    margin-top: 0px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #FFFFFF;
+
+}
+.notificacao{height: 12px;
+    width: 12px;
+    
+    position: absolute;
+    left: 1098px;
+    top: 17px;
+    margin-top: 0px;
+
+    background: #F85959;
+    border-radius: 10px;
+}
+
+ /**titulo de apresentação**/
+h2{position: absolute;
+    width: 786px;
+    height: 54px;
+    left: 263px;
+    top: 74px;
+    border-radius: nullpx;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 25px;
+    letter-spacing: 0,05em;
+    text-align: left;
+    color: #ED7839;
+}
+
+/**botão de download**/
+.btndown {
+    position: absolute;
+    left: 1105px;
+    height: 31px;
+    width: 120px;
+    top: 88px;
+
+    background: #ED7839;
+    border-radius: 4px;
+}
+
+/**icone de download**/
+.icdown{position: absolute;
+    left: 12px;
+    top: 6px;
+    
+    font-family: Font Awesome 5 Free;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+.download{
+    position: absolute;
+    height: 19px;
+    left: 36px;
+    right: 12px;
+    top: calc(50% - 19px/2);
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 4px;
+    }
+
+.btnfav {height: 31px;
+    width: 43px;
+    position: absolute;
+    left: 1230px;
+    top: 88px;
+    
+    background: #ED7839;
+    border-radius: 4px;
+}
+.icfav{
+    position: absolute;
+left: 12px;
+right: 12px;
+top: 6px;
+bottom: 6px;
+
+font-family: Font Awesome 5 Free;
+font-style: normal;
+font-weight: 900;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.btndoi {height: 31px;
+    width: 43px;
+    position: absolute;
+    left: 1278px;
+    right: 0.09%;
+    top: 88px;
+    bottom: 97.76%;
+    background: #ED7839;
+    border-radius: 4px;
+}
+.doi{
+    position: absolute;
+    left: 12px;
+    top: 6px;
+    position: absolute;
+    background: url(../chuvaimg/doi.png) no-repeat;
+}
+
+.comocitar {
+    position: absolute;
+    height: 25px;
+    width: 239px;
+    left: 1083px;
+    top: 131px;
+    margin: 0px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: right;
+    letter-spacing: 0.05em;
+
+    color: #ED7839;
+
+}
+
     /**Anais do simposio**/
 .ph1{height: 16px;
      width: 391%;
-    left: 256px;
+    left: 36px;
     right: 719px;
-    top: 5px;
-    bottom: 1680px;
+    margin-top: 5px;
     border-radius: nullpx;
     position: absolute;
 
@@ -72,47 +405,46 @@
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 16,41px;
     color: #725C5C;
-    
     }
  /**anais do 13º simposio**/
 .ph2 {position: absolute;
     width: 643%;
     height: 26px;
-    left: 256px;
-    top: 23px;
+    left: 36px;
+    top: 0px;
+    bottom: 19px;
             
     font-family: Roboto, sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 22px;
     line-height: 26px;
-            
     color: #725C5C;}
 /**ISSN**/
 .ph3 {position: absolute;
     width: 105%;
     height: 16px;
-    left: 256px;
-    top: 48px;
+    left: 36px;
+    top: 35px;
     
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 16px;
-    
+    line-height: 16,41px;
     color: #725C5C;}
+
 /**imagem da video apresentação**/
 img {position: absolute;
-    width: 55%;
+    width: 783px;
     height: 439px;
     left: 265px;
     top: 161px;
     right: 318px;
-     
     }
+
 /**titulo do resumo**/
 h3{ position: absolute;
     width: 1058px;
@@ -135,10 +467,10 @@ h3{ position: absolute;
 
     display: flex;
     align-items: center;
-
     color: #4E4E4E;
 
 }
+
 /**Resumo**/
 #collapse { position: absolute;
     width: 1058px;
@@ -161,16 +493,15 @@ h3{ position: absolute;
     letter-spacing: 0.02em;
     
     color: #5C5C5C;
-    
-    
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
     margin: 5px 0px;}
+
 /**expansão do resumo**/
 details summary {display: inline-block;
-color: #ED7839;
-cursor: pointer;}
+    color: #ED7839;
+    cursor: pointer;}
 
     
