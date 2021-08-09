@@ -13,6 +13,7 @@
 
 <body>
     <div class="wrap">
+        <!--Titulo lateral da pagina e sidebar-->
         <div class="retangulo">
             <h1>SLACA 2019</h1>
         </div>
@@ -55,10 +56,12 @@
             <p class="notificacao"></p>
             <p class="qntd">2</p>
         </div>
-
+        <!--Título e imagem do video-->
         <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de
             Campinas/SP</h2>
-
+        <img src="chuvaimg/videoapresentacao.png" alt="video apresentacao" class="videoapres">
+           
+        <!--Buttons de download, favoritar e doi-->
         <div>
             <button type="button" class="btndown"><span class="icdown"><svg width="16" height="16" viewBox="0 0 16 16"
                         fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,9 +79,10 @@
                     </svg></span>
             </button>
             <button type="button" class="btndoi"> <img src="chuvaimg/doi.png" alt="doi" class="doi"></button>
+            
             <p class="comocitar">COMO CITAR ESSE TRABALHO?</p>
         </div>
-
+        <!--As informações sobre o trabalho-->
         <div class="painel">
             <div class="rtdetalhes">
                 <p class="detalhes">Detalhes</p>
@@ -108,11 +112,12 @@
                     </span>
                 </p>
             </span>
+            <!--barra de rolagem do painel de detalhes-->
             <div class="rtscroll"></div>
             <div class="rtscroll2"></div>
         </div>
-        <img src="chuvaimg/videoapresentacao.png" alt="video apresentacao" class="videoapres">
 
+        <!--Painel de resumo-->
         <div class="painelres">
             <div class="rtresumo">
                 <h3>Resumo</h3>
@@ -163,10 +168,12 @@
                 </details>
             </span>
         </div>
+        <!--Painel de discussões-->
         <div class="paineldisc">
             <div class="rtdiscussoes">
                 <h3> Discussões </h3>
             </div>
+            <!--Primeira div visivel - opção de criar topico-->
             <div class="criartopico">
                 <p class="titulodisc">Compartilhe suas ideias ou dúvidas com os autores!</p>
                 <img src="chuvaimg/icone1.png" alt="icone1" class="icone1">
@@ -181,6 +188,7 @@
                     <img src="chuvaimg/icon - criar.png" alt="iconcriar" class="iccriar">
                 </button>
             </div>
+            <!--Segunda div visivel - formulario-->
             <div class="formtopico">
                 <p class="tituloform">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
                 <form>
@@ -201,6 +209,7 @@
                 </form>
                 <hr class="divisoria">
             </div>
+            <!--Ultima div visivel - opção de criar novo topico-->
             <div class="finaltopico">
                 <p class="titulodisc">Seu tópico foi enviado com sucesso! :D</p>
                 <p class="agradecimento">Agradecemos por sua contribuição, uma notificação será enviada ao seu email
@@ -212,6 +221,7 @@
                 </button>
                 <img src="chuvaimg/card tópico aguardadando validação.png" alt="aguardando validação" class="validacao">
             </div>
+            <!--Primeiro comentario-->
             <div class="rtcomentario1">
                 <p class="assunto">Assunto da pergunta aparece aqui</p>
                 <p class="nome">Carlos Henrique Santos</p>
@@ -228,6 +238,7 @@
                 <p class="like">1 like</p>
                 <p class="resposta">1 resposta</p>
             </div>
+            <!--Segundo comentario com respostas-->
             <div class="rtcomentario2">
                 <p class="assunto">Assunto da pergunta aparece aqui</p>
                 <p class="nome">Carlos Henrique Santos</p>
@@ -244,6 +255,7 @@
                 <img src="chuvaimg/favoritar.png" alt="favoritar" class="favoritar">
                 <p class="like">4 likes</p>
                 <button id="btnresposta" type="button">4 respostas</button>
+
                 <div class="resposta1">
                     <p class="nomeresposta">Adriano da Silva</p>
                     <p class="autorecoautor">Autor</p>
@@ -284,16 +296,19 @@
         </div>
     </div>
     <footer>
-        <img src="chuvaimg/imagem - footer.png" alt="galoá" class="footergaloa">
+        <div class="footergaloa">
+            <img src="chuvaimg/imagem - footer.png" alt="galoá">
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
+<!--Evento de click no button resposta do comentario 2-->
 <script>
     $(function () {
         $('#btnresposta').on('click', function () {
             $('.rtcomentario2').css('height', '750px');
-            $('.paineldisc').css('height', '1350px');
+            $('.paineldisc').css('height', '1300px');
             $('.resposta1').css('display', 'block');
             $('.resposta2').css('display', 'block');
             $('.resposta3').css('display', 'block');
@@ -302,6 +317,7 @@
         });
     });
 </script>
+<!--Evento de click no button vermais do resumo-->
 <script>
     $(function () {
         $('.vermais').on('click', function () {
@@ -310,32 +326,35 @@
         });
     });
 </script>
+<!--click do Button criar topico no painel de discussões-->
 <script>
     $(function () {
         $('.btncriar').on('click', function () {
             $('.criartopico').css('display', 'none');
             $('.formtopico').css('display', 'block');
-            $('.paineldisc').css('height', '700px');
+            $('.paineldisc').css('height', '1300px');
             $('.divisoria').css('top', '345px');
         });
     });
 </script>
+<!--click do button enviar no formulario-->
 <script>
     $(function () {
         $('.btnenviar').on('click', function () {
             $('.formtopico').css('display', 'none');
             $('.finaltopico').css('display', 'block');
-            $('.paineldisc').css('height', '1000px');
+            $('.paineldisc').css('height', '1500px');
             $('.divisoria').css('top', '270px');
         });
     });
 </script>
+<!--Click do button novo topico-->
 <script>
     $(function () {
         $('.btnnovotopico').on('click', function () {
             $('.formtopico').css('display', 'block');
             $('.finaltopico').css('display', 'none');
-            $('.paineldisc').css('height', '900px');
+            $('.paineldisc').css('height', '1300px');
             $('.divisoria').css('top', '345px');
         });
     });

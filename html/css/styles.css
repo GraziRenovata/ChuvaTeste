@@ -21,14 +21,6 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
-.sidebar > p { position: fixed;
-    font-family: 'Quicksand', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 19px;
-    color: #725C5C;
-}
  /**opções do sidebar**/
 .rt1 {top: 326px;
     left: 0px;
@@ -405,6 +397,7 @@ h2{position: absolute;
     box-sizing: border-box;
     border-radius: 3px;
 }
+/**retangulo do "detalhes"**/
 .rtdetalhes {position: absolute;
     width: 242px;
     height: 45px;
@@ -556,7 +549,7 @@ h3{ position: absolute;
 
     color: #4E4E4E;
 }
-
+/***texto do resumo**/
 .textores {position:absolute;
     width: 1028px;
     height: 114px;
@@ -564,7 +557,6 @@ h3{ position: absolute;
     top: 60px;
     flex: none;
    
-    
     font-family: Quicksand;
     font-style: normal;
     font-weight: normal;
@@ -679,7 +671,7 @@ h3{ position: absolute;
     left: 14px;
     width: 17px;
     height: 17px;}
-
+/**retangulo do comentario 1**/
 .rtcomentario1 { position: relative;
     height: 148px;
     width: 1028px;
@@ -763,6 +755,7 @@ h3{ position: absolute;
     font-size: 14px;
     line-height: 19px;
     color: #757575;}
+
 .rtcomentario2 {position: relative;
     left: 15px;
     top: 300px;
@@ -838,9 +831,11 @@ h3{ position: absolute;
     font-size: 14px;
     line-height: 17px;
     color: #4D4D4D;}
+
 .resposta2 {position: absolute;
     top: 295px;
     display: none;}
+
 .resposta3 {position: absolute;
     height: 184px;
     width: 1028px;
@@ -851,6 +846,7 @@ h3{ position: absolute;
     border: 1px solid #E7E7E7;
     box-sizing: border-box;
     border-radius: 0px;}
+
 .resposta4 {position: absolute;
     height: 131px;
     width: 1028px;
@@ -861,6 +857,7 @@ h3{ position: absolute;
     border: 1px solid #E7E7E7;
     box-sizing: border-box;
     border-radius: 0px 0px 4px 4px;}
+/**div do formulario**/
 .formtopico {position: relative;
     margin-top: -50px;
     top: auto;
@@ -943,7 +940,6 @@ h3{ position: absolute;
     top: 0px;
     cursor: pointer;
     
-    
     background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
     border-radius: 0px 0px 4px 0px;}
 .enviar {position: absolute;
@@ -958,7 +954,7 @@ h3{ position: absolute;
     line-height: 16px;
     text-align: center;
     color: #FFFFFF;}
-
+ /**div final com opção de novo topico**/
 .finaltopico {position: relative;
     display: none;
     top: auto;
@@ -1022,5 +1018,4 @@ h3{ position: absolute;
 .footergaloa {position: relative;
     height: 181px;
     width: 1086px;
-    left: 234px;
-margin-bottom: -10px;}
+    left: 234px;}
