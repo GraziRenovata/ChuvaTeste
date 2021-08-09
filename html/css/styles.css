@@ -1,9 +1,11 @@
-.wrap {height: 1701px;
-    width: 1366px;
-    left: -684px;
-    top: -978px;
+.wrap {position: relative;
+    height: auto;
+    width: 100%;
     border-radius: 0px;
     }
+    @media only screen and (max-width: 600px) {
+        .header, .paineldisc, .rtdiscussoes, .painelres, .rtresumo {flex: 100%;}
+      }
 
 .sidebar{
     height: 1633px;
@@ -12,15 +14,14 @@
     top: 68px;
     border-radius: 0px;
     box-shadow: 0px 0px 10px 0px #00000040;
-    position: absolute;
-    right: 0%;
-    bottom: -47.44%;
+    position: fixed;
+    flex: 50%;
 
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
-.sidebar p {
+.sidebar > p { position: fixed;
     font-family: 'Quicksand', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -29,41 +30,41 @@
     color: #725C5C;
 }
  /**opções do sidebar**/
-.rt1 {top: 258px;
+.rt1 {top: 326px;
     left: 0px;
-    position: absolute;
+    position: fixed;
     height: 33px;
     width: 220px;
     border-radius:0px;
     border-bottom: 3px inset currentColor;
 }
-.rt2 {top: 293px;
+.rt2 {top: 361px;
     left: 0px;
-    position: absolute;
+    position: fixed;
     height: 33px;
     width: 220px;
     border-radius:0px;
     border-bottom: 3px inset currentColor;
 }
-.rt3 {top: 328px;
+.rt3 {top: 396px;
     left: 0px;
-    position: absolute;
+    position: fixed;
     height: 33px;
     width: 220px;
     border-radius:0px;
     border-bottom: 3px inset currentColor;
 }
-.rt4{top: 363px;
+.rt4{top: 431px;
     left: 0px;
-    position: absolute;
+    position: fixed;
     height: 33px;
     width: 220px;
     border-radius:0px;
     border-bottom: 3px inset currentColor;
 }
-.rt5 {top: 398px;
+.rt5 {top: 466px;
     left: 0px;
-    position: absolute;
+    position: fixed;
     height: 33px;
     width: 220px;
     border-radius:0px;
@@ -76,9 +77,9 @@
     top: 0px;
     background: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
 }
-.rt6 {top: 433px;
+.rt6 {top: 501px;
     left: 0px;
-    position: absolute;
+    position: fixed;
     height: 33px;
     width: 220px;
     border-radius:0px;
@@ -114,7 +115,7 @@ h4 {position: absolute;
     left: 0px;
     top: 0px;
     border-radius: 0px;
-    position: absolute;
+    position: fixed;
     right: 1146px;
     bottom: 1633px;
     background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);}
@@ -123,7 +124,7 @@ h4 {position: absolute;
  h1{ height: 33px;
     width: 178%;
     border-radius: nullpx;
-    position: absolute;
+    position: fixed;
     left: 20px;
     right: 1168px;
     top: 0px;
@@ -139,11 +140,14 @@ h4 {position: absolute;
     text-align: center;
     color: #FFFFFF;}
 
-.header {position:absolute;
+.header {position:relative;
     height: 68px;
     width: 1146px;
     left: 220px;
     top: 0px;
+    margin-top: -9px;
+    margin-left: -8px;
+    flex: 50%;
     border-radius: 0px;
     background: #FDF1EB
 }
@@ -338,21 +342,21 @@ h2{position: absolute;
 }
 .icfav{
     position: absolute;
-left: 12px;
-right: 12px;
-top: 6px;
-bottom: 6px;
+    left: 12px;
+    right: 12px;
+    top: 6px;
+    bottom: 6px;
 
-font-family: Font Awesome 5 Free;
-font-style: normal;
-font-weight: 900;
-font-size: 16px;
-line-height: 22px;
-text-align: center;
-letter-spacing: 0.01em;
-text-transform: uppercase;
+    font-family: Font Awesome 5 Free;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
 
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 .btndoi {height: 31px;
     width: 43px;
@@ -505,55 +509,63 @@ color: #FFFFFF;
     color: #725C5C;}
 
 /**imagem da video apresentação**/
-img {position: absolute;
+.videoapres {position: relative;
     width: 783px;
-    height: 439px;
+    height: auto;
+    margin-top: -65px;
     left: 265px;
     top: 161px;
     right: 318px;
+    flex: 50%;
     }
-
-/**titulo do resumo**/
-h3{ position: absolute;
+/**painel do resumo**/
+.painelres { position:relative;
+    width: 1058px;
+    height: 189px;
+    left: 263px;
+    margin-top: 190px;
+    flex: 50%;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 3px;}
+        
+.rtresumo{position: relative;
     width: 1058px;
     height: 45px;
-    left: 263px;
-    top: 630px;
+    margin-top: auto;
+    flex: 50%;
 
     background: #FDF1EB;
     border: 1px solid #ECECEC;
     box-sizing: border-box;
     border-radius: 3px 3px 0px 0px;
-    position: absolute;
+}
+/**titulo do resumo**/
+h3{ position: absolute;
+    margin-top: 0px;
+    top: 10px;
+    left: 15px;
     width: 1028px;
-
-    font-family: Roboto, sans-serif;
+    font-family: Roboto;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 20px;
     line-height: 25px;
-
     display: flex;
     align-items: center;
-    color: #4E4E4E;
 
+    color: #4E4E4E;
 }
 
-/**Resumo**/
-#collapse { position: absolute;
-    width: 1058px;
-    height: 189px;
-    
-    border: 1px solid #ECECEC;
-    box-sizing: border-box;
-    border-radius: 3px;
+.textores {position:absolute;
     width: 1028px;
     height: 114px;
-    left: 263px;
-    right: 45px;
-    top: 690px;
+    left: 15px;
+    top: 60px;
+    flex: none;
+   
     
-    font-family: Quicksand, sans-serif;
+    font-family: Quicksand;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -561,15 +573,265 @@ h3{ position: absolute;
     letter-spacing: 0.02em;
     
     color: #5C5C5C;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 5px 0px;}
+}
 
 /**expansão do resumo**/
-details summary {display: inline-block;
+.vermais {display: inline-block;
     color: #ED7839;
     cursor: pointer;}
 
+    /**Discussões**/
+.rtdiscussoes {position: relative;
+    width: 1058px;
+    height: 45px;
+    left: 0px;
+    top: 0px;
+    flex: 50%;
     
+    background: #FDF1EB;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 3px 3px 0px 0px;
+}
+.paineldisc {position: relative;
+    width: 1058px;
+    height: 621px;
+    left: 263px;
+    margin-top: 30px;
+    
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 3px;}
+.compartilhe {position: absolute;
+    left: 324.5px;
+    top: 60px;
+    margin-top: 0px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #ED7839;}
+/** icones da discussão**/
+.icone1{position: absolute;
+    height: 48px;
+    width: 50px;
+    left: 402.5px;
+    top: 109px;}
+.icone2 {position: absolute;
+     height: 48px;
+    width: 50px;
+    left: 504.5px;
+    top: 109px ;}
+.icone3 {position: absolute;
+    height: 48px;
+    width: 50px;
+    top: 109px;
+    left: 608.5px;}
+
+.textotopico {position: absolute;
+    left: 216.5px;
+    top: 193px;
+    margin-top: 0px;
+    height: 39px;
+    width: 626px;
+    
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #595959;}
+.divisoria {position: absolute;
+    width: 1027px;
+    height: 0px;
+    left: 16px;
+    top: 263px;
+    border: 1px solid #E7E7E7;}
+.btncriar {height: 32px;
+    width: 133px;
+    position: absolute;
+    left: 463px;
+    top: 246px;
+    
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;}
+.textcriar {position: absolute;
+    left: 37px;
+    top: 7px;
+    height: 16px;
+    width: 83px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 16px;
+    
+    color: #FFFFFF}
+/**icone + do button **/
+.iccriar {position: absolute;
+    top: 8px;
+    left: 14px;
+    width: 17px;
+    height: 17px;}
+
+.rtcomentario1 { position: absolute;
+    height: 148px;
+    width: 1028px;
+    left: 15px;
+    top: 293px;
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;}
+.nome {position: absolute;
+    height: 15px;
+    width: 542px;
+    top: 40px;
+    margin-top: 0px;
+    left: 24.17px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #5C5C5C;}
+.assunto {position: absolute;
+    left: 24.17px;
+    top: 17px;
+    margin-top: 0px;
+    height: 20px;
+    width: 267px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    
+    color: #ED7839;}
+.textoassunto{position: absolute;
+    left: 24.17px;
+    top: 65px;
+    margin-top: 0px;
+    height: 35px;
+    width: 980.67px;
+   
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17.5px;
+    color: #4D4D4D;
+}
+.favoritar {position: absolute;
+    height: 19px;
+    width: 25px;
+    left: 43px;
+    top: 118px;
+    border-radius: 2px;}
+.ellipses {position: absolute;
+    width: 4px;
+    height: 18px;
+    left: 24px;
+    top: 118px;}
+.like {position: absolute;
+    left: 85px;
+    top: 117px;
+    margin-top: 0px;
+   
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 19px; 
+    color: #757575;}
+.resposta {position: absolute;
+    left: 129px;
+    top: 117px;
+    margin-top: 0px;
+    
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 19px;
+    color: #757575;}
+.rtcomentario2 {position: absolute;
+    left: 15px;
+    top: 458px;
+    min-height: 185px;
+    max-height: 500px;
+    width: 1028px;
+
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;}
+#btnresposta{border: hidden;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    left: 124px;
+    top: 110px;
+    margin-top: 0px;
+    
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 19px;
+    color: #757575;}
+.resposta1 {position: absolute;
+    height: 131px;
+    width: 1028px;
+    left: 0px;
+    top: 160px;
+    display: none;
+    
+    background: #F8F8F8;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    border-radius: 0px;}
+.nomeresposta{position: absolute;
+    height: 15px;
+    width: 542px;
+    left: 23.19px;
+    top: 18px;
+    
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #5C5C5C;
+    }
+.autorecoautor {position: absolute;
+    width: 38px;
+    height: 18px;
+    left: 902.78px;
+    top: 18px;
+    
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ED7839;}
+.textoresposta {position: absolute;
+    height: 53px;
+    width: 981px;
+    left: 23.19px;
+    top: 43px;
+    
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4D4D4D;}
