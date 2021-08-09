@@ -595,14 +595,14 @@ h3{ position: absolute;
 }
 .paineldisc {position: relative;
     width: 1058px;
-    height: 621px;
+    height: 655px;
     left: 263px;
     margin-top: 30px;
     
     border: 1px solid #ECECEC;
     box-sizing: border-box;
     border-radius: 3px;}
-.compartilhe {position: absolute;
+.titulodisc {position: absolute;
     left: 324.5px;
     top: 60px;
     margin-top: 0px;
@@ -649,13 +649,14 @@ h3{ position: absolute;
     width: 1027px;
     height: 0px;
     left: 16px;
-    top: 263px;
+    top: 255px;
     border: 1px solid #E7E7E7;}
 .btncriar {height: 32px;
     width: 133px;
     position: absolute;
     left: 463px;
     top: 246px;
+    cursor: pointer;
     
     background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
@@ -679,11 +680,12 @@ h3{ position: absolute;
     width: 17px;
     height: 17px;}
 
-.rtcomentario1 { position: absolute;
+.rtcomentario1 { position: relative;
     height: 148px;
     width: 1028px;
     left: 15px;
     top: 293px;
+    margin-top: auto;
     background: #FFFFFF;
     border: 1px solid #E7E7E7;
     box-sizing: border-box;
@@ -761,11 +763,12 @@ h3{ position: absolute;
     font-size: 14px;
     line-height: 19px;
     color: #757575;}
-.rtcomentario2 {position: absolute;
+.rtcomentario2 {position: relative;
     left: 15px;
-    top: 458px;
-    min-height: 185px;
-    max-height: 500px;
+    top: 300px;
+    margin-top: auto;
+    min-height: 155px;
+    max-height: auto;
     width: 1028px;
 
     background: #FFFFFF;
@@ -790,7 +793,7 @@ h3{ position: absolute;
 .resposta1 {position: absolute;
     height: 131px;
     width: 1028px;
-    left: 0px;
+    left: -1px;
     top: 160px;
     display: none;
     
@@ -835,3 +838,189 @@ h3{ position: absolute;
     font-size: 14px;
     line-height: 17px;
     color: #4D4D4D;}
+.resposta2 {position: absolute;
+    top: 295px;
+    display: none;}
+.resposta3 {position: absolute;
+    height: 184px;
+    width: 1028px;
+    top: 447px;
+    left: -1px;
+    display: none;
+    background: #F8F8F8;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    border-radius: 0px;}
+.resposta4 {position: absolute;
+    height: 131px;
+    width: 1028px;
+    top: 630px;
+    left: -1px;
+    display: none;
+    background: #F8F8F8;
+    border: 1px solid #E7E7E7;
+    box-sizing: border-box;
+    border-radius: 0px 0px 4px 4px;}
+.formtopico {position: relative;
+    margin-top: -50px;
+    top: auto;
+    display: none;}
+.tituloform {position: absolute;
+    left: 305px;
+    top: 45px;
+    
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5C5C5C;
+    }
+.assuntoform {position: absolute;
+    width: 1020.52px;
+    top: 95px;
+    left: 17.53px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ED7839;}
+#caixaassunto {position: absolute;
+    height: 39px;
+    width: 1025px;
+    left: 17.53px;
+    top: 115px;
+    
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 3px;}
+.conteudoform {position: absolute;
+    width: 1020.52px;
+    left: 17.53px;
+    top: 164px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ED7839;}
+.caixaconteudo {position: absolute;
+    height: 113px;
+    width: 1025px;
+    left: 17.53px;
+    top: 187px;
+    
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 3px;}
+.barradobtn{position: absolute;
+    height: 31px;
+    width: 1025px;
+    left: 17.53px;
+    top: 274px;
+    
+    background: #EAF1F2;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 0px 0px 4px 4px;}
+.b {position: absolute;
+    margin-top: -3px;
+    left: 29px;
+    top: 11px;}
+.i {position: absolute;
+    margin-top: -3px;
+    left: 72.48px;
+    top: 11px;}
+.btnenviar {height: 31px;
+    width: 205px;
+    position: absolute;
+    left: 818.87px;
+    top: 0px;
+    cursor: pointer;
+    
+    
+    background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+    border-radius: 0px 0px 4px 0px;}
+.enviar {position: absolute;
+    top: 7px;
+    left: 68px;
+    margin-top: 0px;
+    
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;}
+
+.finaltopico {position: relative;
+    display: none;
+    top: auto;
+    margin-top: 10px;
+}
+.agradecimento {position: absolute;
+    height: 20px;
+    width: 805px;
+    left: 113px;
+    top: 100px;
+    
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #595959}
+.descubra {position: absolute;
+    left: 435px;
+    top: 149px;
+    
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 137.5%;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #F48F44;}
+.btnnovotopico{position: relative;
+    height: 32px;
+    width: 235px;
+    left: 411.08px;
+    top: 216px;
+    cursor: pointer;
+    border-radius: 4px;
+
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;}
+.novotopico {position: absolute;
+    left: 58.53px;
+    top: 7px;
+    margin-top: 0px;
+    
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    }
+.validacao {position: relative;
+    left: 15px;
+    top: 262px;
+    
+    box-sizing: border-box;
+    border-radius: 4px;}
+.footergaloa {position: relative;
+    height: 181px;
+    width: 1086px;
+    left: 234px;
+margin-bottom: -10px;}
